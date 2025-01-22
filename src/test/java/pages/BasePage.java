@@ -29,6 +29,8 @@ public class BasePage {
 		PageFactory.initElements(d, this);
 	}
 	
+	//*********************************************
+	
 	//button click common method
 	public void click(WebElement element) {
 		
@@ -37,6 +39,8 @@ public class BasePage {
 		//after element is clickable we will click it
 		waitForClicking(element).click();;		
 	}
+	
+	//*********************************************
 	
 	//now we need a method to enter value into a text box
 	public void enterValue(WebElement element, String value) {
@@ -52,12 +56,16 @@ public class BasePage {
 		
 	}
 	
+	//*********************************************
+	
 	//before we can click on any element we need to wait for it to be visible
 	private WebElement waitForClicking(WebElement element) {
 		
 		System.out.println("inside the waitForClicking method in BasePage class");
 		return wait.until(ExpectedConditions.elementToBeClickable(element));	
 	}
+	
+	//*********************************************
 	
 	//before entering a value into a text box we need to wait for it to be visible
 	private WebElement waitForElementToBeVisible(WebElement element) {

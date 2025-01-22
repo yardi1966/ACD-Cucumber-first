@@ -28,6 +28,8 @@ public class TestDataLoader {
 		return testDataLoader;
 	}
 	
+	//*********************************************
+	
 	//create a properties object to store the data
 	Properties prop;
 	
@@ -53,6 +55,8 @@ public class TestDataLoader {
 		
 	}
 	
+	//*********************************************
+	
 	//now create getter methods
 	//get the application url
 	public String getAppURL() {
@@ -61,12 +65,16 @@ public class TestDataLoader {
 		return prop.getProperty("appurl");
 	}
 	
+	//*********************************************
+	
 	//get the username from the properties file using the key
 	public String getUserName() {
 		
 		System.out.println("inside the getUserName method in TestDataLoader class");
 		return prop.getProperty("uname");
 	}
+	
+	//*********************************************
 	
 	//get the password from the properties file using the key
 	public String getPassword() {

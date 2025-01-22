@@ -25,6 +25,8 @@ public class LoginSteps {
 		loginPage.enterUserName(TestDataLoader.getInstance().getUserName()); 	
 	}										
 	
+	//*********************************************
+	
 	@And("User enters valid password")
 	public void user_enters_password() {
 		
@@ -33,6 +35,8 @@ public class LoginSteps {
 		loginPage.enterPassword(TestDataLoader.getInstance().getPassword());
 	}										
 	
+	//*********************************************
+	
 	@And("user clicks on Login button")
 	public void user_clicks_on_login() {
 		
@@ -40,6 +44,8 @@ public class LoginSteps {
 		//now click on login button
 		loginPage.clickOnLogin();
 	}
+	
+	//*********************************************
 	
 	@Then("Home page will be displayed")
 	public void home_page_is_displayed() throws InterruptedException {

@@ -15,6 +15,8 @@ public class LoginPage extends BasePage {
 
 	}
 
+	//*********************************************
+	
 	// create locators for login page
 
 	// username locator
@@ -40,6 +42,8 @@ public class LoginPage extends BasePage {
 		enterValue(userName, value);
 	}
 
+	//*********************************************
+	
 	// enter password
 	public void enterPassword(String value) {
 
@@ -47,6 +51,8 @@ public class LoginPage extends BasePage {
 		// to enter a value we have a method in the base page class
 		enterValue(password, value);
 	}
+	
+	//*********************************************
 	
 	//method to click on the login button
 	public void clickOnLogin() {
